@@ -217,7 +217,7 @@
   }
   function callAPIGetSeats(){
 	  $.ajax({
-	      url: "http://localhost:8080/api/admin/seats?roomId=" + $("#listRoom").find(":selected").val(),
+	      url: "https://api-cinema-app.herokuapp.com/api/admin/seats?roomId=" + $("#listRoom").find(":selected").val(),
 	      type: 'POST',
           headers: {"Authorization": "Bearer "+[[${session.jwtResponse.accessToken}]]},
           contentType: "application/json; charset=utf-8",
