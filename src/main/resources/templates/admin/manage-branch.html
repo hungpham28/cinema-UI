@@ -199,7 +199,7 @@
         $("#example").on("click",".btn-delete",function(){
         	var tag=$(this)
   		  $.ajax({
-		      url: "http://localhost:8080/api/admin/branches?branchId=" + $(this).data('id'),
+		      url: "https://api-cinema-app.herokuapp.com/api/admin/branches?branchId=" + $(this).data('id'),
 		      type: 'DELETE',
 	          headers: {"Authorization": "Bearer "+[[${session.jwtResponse.accessToken}]]},   
 		      success: function (data) {
