@@ -337,7 +337,7 @@
 	                
 	                $.ajax({
 	                    type: "POST",
-	                    url: [[@{/api/bills/create-new-bill}]],
+	                    url: "https://api-cinema-app.herokuapp.com/api/bills/create-new-bill",
 	                    headers: {"Authorization": "Bearer "+[[${session.jwtResponse.accessToken}]]},
 	                    data: json,
 	                    contentType: "application/json; charset=utf-8",
