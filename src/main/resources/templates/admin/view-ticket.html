@@ -183,7 +183,7 @@
         $("#example").on("click",".btn-delete",function(){
         	var tag=$(this)
   		  $.ajax({
-		      url: "http://localhost:8080/api/admin/tickets?ticketId=" + $(this).data('id'),
+		      url: "[[@{/api/admin/tickets}]]?ticketId=" + $(this).data('id'),
 		      type: 'DELETE',
 	          headers: {"Authorization": "Bearer "+[[${session.jwtResponse.accessToken}]]},   
 		      success: function (data) {
