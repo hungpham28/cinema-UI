@@ -190,7 +190,7 @@
   <script th:inline="javascript">
   function callAPIGetRooms(){
 	  $.ajax({
-	      url: "http://localhost:8080/api/admin/rooms?branchId=" + $("#listBranch").find(":selected").val(),
+	      url: "https://api-cinema-app.herokuapp.com/api/admin/rooms?branchId=" + $("#listBranch").find(":selected").val(),
 	      type: 'POST',
           headers: {"Authorization": "Bearer "+[[${session.jwtResponse.accessToken}]]},
           contentType: "application/json; charset=utf-8",
