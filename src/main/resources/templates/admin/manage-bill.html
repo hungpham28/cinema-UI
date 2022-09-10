@@ -185,7 +185,7 @@
         $("#example").on("click",".btn-delete",function(){
         	var tag=$(this)
   		  $.ajax({
-		      url: "http://localhost:8080/api/admin/bills?billId=" + $(this).data('id'),
+		      url: "https://api-cinema-app.herokuapp.com/api/admin/bills?billId=" + $(this).data('id'),
 		      type: 'DELETE',
 	          headers: {"Authorization": "Bearer "+[[${session.jwtResponse.accessToken}]]},   
 		      success: function (data) {
