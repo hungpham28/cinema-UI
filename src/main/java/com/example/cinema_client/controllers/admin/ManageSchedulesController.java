@@ -36,7 +36,7 @@ public class ManageSchedulesController {
     private RestTemplate restTemplate;
     private static final String API_SCHEDULES = Api.baseURL+"/api/admin/schedules";
     private static final String API_GET_BRANCHES = Api.baseURL+"/api/admin/branches";
-    private static final String API_GET_MOVIES = Api.baseURL+"/api/admin/movies";
+    private static final String API_GET_MOVIES = Api.baseURL+"/api/movies/showing";
     private static final String API_GET_ROOMS = Api.baseURL+"/api/admin/rooms";
 
     @GetMapping
