@@ -77,7 +77,7 @@
                                                 (${seat.isChecked} ? 'item--checked':
                                                 (${seat.isOccupied}==1 ? 'item--picked':
                                                 (${seat.isVip} ? 'item--vip':''))):
-                                                 'item--hiden'"
+                                                 'item--hidden'"
                                                 th:data-seat="${seat.name}" 
                                                 th:data-price="${seat.isVip}? ${schedule.price}+10000:${schedule.price}"
                                                 th:data-seat-id="${seat.id}"></i>
